@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link 
+       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+       rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body>
+  <body class="page">
       <!--Логотип сайта, ссылки навигации, электронная почта и телефон фирмы-->
     
-      <a href="" class="test-link">Тест линк</a>  
-
-    <header class="page-header"> 
+          <header class="page-header"> 
         
       <nav>          
         <a href="./index.html" class="logo">
-            Web Studio
+           <span>Web</span> Studio
         </a>
 
-        <ul class="site-nav">
-            <li><a href="./index.html">Студия</a></li>
-            <li><a href="./portfolio.html">Портфолио</a></li>
-            <li><a href="">Контакты</a></li>
+        <ul class="site-nav list">
+            <li><a href="./index.html" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
         </ul>
 
         <ul class="auth-nav">
             <li>
-                <a href="mailto:info@devstudio.com"> 
+                <a href="mailto:info@devstudio.com" class="link"> 
                     <img src="./images/envelope(hover).svg" alt="конверт">
                     info@devstudio.com
                 </a>
             </li>
             <li>
-                <a href="tel:380961111111">
+                <a href="tel:380961111111" class="link">
                     <img src="./images/smartphone.svg" alt="телефон">
                     +38 096 111 11 11
                 </a>
@@ -44,58 +46,58 @@
   <!--Деловые качества, основные направления, персонал, клиенты-->
     <main>
     <div>
-      <section>
-          <h1>эффективные решения для вашего бизнеса</h1>
-          <a href="">Заказать услугу</a>
+      <section class="hero">
+          <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+          <a href="" class="button primary">Заказать услугу</a>
       </section>
     </div>
 
-    <section>
-     <ul>
+    <section class="section">
+     <ul class="advantage-list">
          <li>
              <a href=""><img src="./images/antenna1.svg" alt="антена"></a>
-             <h2>Внимание к деталям</h2>
+             <h2 class="title">Внимание к деталям</h2>
              <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
          </li>
          <li>
             <a href=""><img src="./images/clock1.svg" alt="часы"></a>
-            <h2>Пунктуальность</h2>
+            <h2 class="title">Пунктуальность</h2>
             <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
          </li>
          <li>
             <a href=""><img src="./images/diagram1.svg" alt="диаграмма"></a>
-            <h2>Планирование</h2>
+            <h2 class="title">Планирование</h2>
             <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
          </li>
          <li>
             <a href=""><img src="./images/astronaut1.svg" alt="астронавт"></a>
-            <h2>Современные технологии</h2>
+            <h2 class="title">Современные технологии</h2>
             <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
          </li>
      </ul>
     </section>
 
-    <section>
-       <h2>Чем мы занимаемся</h2>
-       <ul>
+    <section class="section">
+       <h2 class="work-title">Чем мы занимаемся</h2>
+       <ul class="work-list">
            <li>
                <img src="./images/nout.jpg" alt="ноутбук">
-               <h3>Десктопные приложения</h3>
+               <h3 class="work">Десктопные приложения</h3>
            </li>
            <li>
                <img src="./images/smart.jpg" alt="смартфон">
-               <h3>Мобильные приложения</h3>
+               <h3 class="work">Мобильные приложения</h3>
            </li>
            <li>
                <img src="./images/mon.jpg" alt="монитор">
-               <h3>Дизайнерские решения</h3>
+               <h3 class="work">Дизайнерские решения</h3>
            </li>
        </ul>
     </section>
 
-    <section>
-        <h2>Наша команда</h2>
-        <ul>
+    <section class="section-team">
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list">
             <li>
                 <img src="./images/foto1.jpg" alt="John Smith">
                 <h3>John Smith</h3>
@@ -147,8 +149,8 @@
         </ul>
     </section>
 
-    <section>
-        <h2>Постоянные клиенты</h2>
+    <section class="section">
+        <h2 class="customers">Постоянные клиенты</h2>
         <ul>
             <li><a href=""><img src="./images/logo1.svg" alt="logo 1"></a></li>
             <li><a href=""><img src="./images/logo2.svg" alt="logo 2"></a></li>
@@ -160,11 +162,11 @@
     </section>
     </main>
    <!--Логотип, физический адрес, контакты, страницы в соц. сетях, подписка на рассылку-->
-    <footer>
+    <footer class="footer">
         <div>
-            <a href="./index.html">Web Studio</a>                 
+            <a href="./index.html" class="logo"><span>Web</span> Studio</a>                 
                      
-            <address>
+            <address class="address">
                         г. Киев, пр-т Леси Украинки, 26 <br>
                         <a href="mailto:info@devstudio.com"> 
                         info@devstudio.com
@@ -178,7 +180,7 @@
         
         
         <div>
-            <b>присоединяйтесь</b> 
+            <b class="connect">присоединяйтесь</b> 
             <ul>
                <li><a href="" aria-label="Instagram link">Instagram</a></li>
                <li><a href="" aria-label="Twitter link">Twitter</a></li>
@@ -188,12 +190,12 @@
         </div>
         
         <div>
-            <p>подписаться на рассылку</p> 
+            <p class="signecher">подписаться на рассылку</p> 
             <input type="text" name="user_name" />
-            <button type="submit">Подписаться</button>
+            <button type="submit" class="button primary">Подписаться</button>
         </div>
         
-        <p>2020 | Developed by GoIT Students </p>
+        <p class="footer-down">2020 | Developed by GoIT Students </p>
 
     </footer>
   </body>
